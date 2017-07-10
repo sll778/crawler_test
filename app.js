@@ -74,7 +74,7 @@ app.get('/new163', function(err, res, body) {
     request(options, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             str = iconvlite.decode(body, 'gbk');
-            console.log(str) // Show the HTML for the Google homepage.
+            console.log(str) 
         }
     })
 });
